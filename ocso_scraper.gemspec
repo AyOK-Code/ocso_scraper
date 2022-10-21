@@ -6,13 +6,12 @@ Gem::Specification.new do |spec|
   spec.authors       = ["sabrinaleggett"]
   spec.email         = ["sabrina.gelbart@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.summary       = "Gem used for  scraping OCSO warrants page"
   spec.homepage      = "https://github.com/AyOK-Code/ocso_scraper"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
-  spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
+
 
   spec.metadata["homepage_uri"] = spec.homepage
   
