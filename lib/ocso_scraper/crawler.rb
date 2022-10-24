@@ -4,7 +4,7 @@ module OcsoScraper
 class Crawler
 
 
-def request
+def self.request
     if ENV['PROXY_HOST']
         HTTParty::Basement.http_proxy(
           ENV['PROXY_HOST'],
