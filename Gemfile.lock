@@ -1,0 +1,60 @@
+PATH
+  remote: .
+  specs:
+    ocso_scraper (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    byebug (11.1.3)
+    coderay (1.1.3)
+    diff-lcs (1.5.0)
+    httparty (0.18.1)
+      mime-types (~> 3.0)
+      multi_xml (>= 0.5.2)
+    method_source (1.0.0)
+    mime-types (3.4.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2022.0105)
+    multi_xml (0.6.0)
+    pry (0.14.1)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
+    pry-nav (1.0.0)
+      pry (>= 0.9.10, < 0.15)
+    pry-rails (0.3.9)
+      pry (>= 0.10.4)
+    pry-remote (0.1.8)
+      pry (~> 0.9)
+      slop (~> 3.0)
+    rake (12.3.3)
+    rspec (3.11.0)
+      rspec-core (~> 3.11.0)
+      rspec-expectations (~> 3.11.0)
+      rspec-mocks (~> 3.11.0)
+    rspec-core (3.11.0)
+      rspec-support (~> 3.11.0)
+    rspec-expectations (3.11.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.11.0)
+    rspec-mocks (3.11.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.11.0)
+    rspec-support (3.11.1)
+    slop (3.6.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  byebug (~> 11.1.3)
+  httparty (~> 0.18.1)
+  ocso_scraper!
+  pry-nav
+  pry-rails
+  pry-remote
+  rake (~> 12.0)
+  rspec (~> 3.0)
+
+BUNDLED WITH
+   2.1.4
