@@ -1,6 +1,6 @@
 require "ocso_scraper/version"
 require "ocso_scraper/crawler.rb"
-require "ocso_scraper/crawler_parser.rb"
+require "ocso_scraper/page_parser.rb"
 
 
 module OcsoScraper
