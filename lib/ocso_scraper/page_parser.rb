@@ -15,9 +15,9 @@ module OcsoScraper
           first_name: first_el.text,
           middle_name: middle_el.text,
           birth_date: parse_date(dob_el.text),
-          case_number: strip_nbsp(details[0].sub('CASE_NUMBER: ','')),
-          bond_amount: Monetize.parse(strip_nbsp(details[1].sub('Bond Amount: ',''))).to_f.round(2),
-          issued: parse_date(strip_nbsp(details[2].sub('Issued: ',''))),
+          case_number: strip_nbsp(details[0].sub('CASE_NUMBER: ', '')),
+          bond_amount: Monetize.parse(strip_nbsp(details[1].sub('Bond Amount: ', ''))).to_f.round(2),
+          issued: parse_date(strip_nbsp(details[2].sub('Issued: ', ''))),
           counts: strip_nbsp(offenses_el.text)
         }
         warrants << warrant
@@ -27,7 +27,7 @@ module OcsoScraper
 
     def self.parse_date(date)
       Date.strptime(date, '%m/%d/%Y')
-    rescue
+    rescue StandardError
       nil
     end
 

@@ -1,7 +1,6 @@
-require "ocso_scraper/version"
-require "ocso_scraper/crawler.rb"
-require "ocso_scraper/page_parser.rb"
-
+require 'ocso_scraper/version'
+require 'ocso_scraper/crawler'
+require 'ocso_scraper/page_parser'
 
 module OcsoScraper
   class Error < StandardError; end
