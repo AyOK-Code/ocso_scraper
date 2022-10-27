@@ -1,0 +1,37 @@
+AllCops:
+  TargetRubyVersion: 2.6
+  NewCops: enable
+  Include:
+    - '**/*.rb'
+    - '**/*.rake'
+  Exclude:
+    - '.git/**/*'
+    - 'bin/**/*'
+    - 'config/**/*'
+    - 'vendor/**/*'
+Metrics/BlockLength:
+  Max: 50
+  Exclude: 
+    - 'spec/**/*'
+Style/Documentation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/MutableConstant:
+  Enabled: false
+Style/SymbolArray:
+  Enabled: false
+Style/WordArray:
+  Enabled: false
+Metrics/MethodLength:
+  Max: 25
+Style/CaseEquality:
+  AllowOnConstant: true
+Metrics/AbcSize:
+  Enabled: false
+Metrics/ParameterLists:
+  Exclude:
+    - 'lib/ocso_scraper/page_parser.rb'
+Layout/LineLength:
+  Exclude:
+    - 'lib/ocso_scraper/crawler.rb'
